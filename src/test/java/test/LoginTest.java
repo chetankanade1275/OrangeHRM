@@ -33,6 +33,7 @@ public class LoginTest {
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		//step-4
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		//step-5 Cloning check
 		
 	}	
 	
@@ -57,7 +58,10 @@ public class LoginTest {
 		
 		Assert.assertEquals(driver.getTitle(), "OrangeHRM");
 	}
-	
+	@Test 
+	 public void test5 () {
+		System.out.println();
+	}
 	@AfterTest
 	public void tearDown() {
 		driver.close();
