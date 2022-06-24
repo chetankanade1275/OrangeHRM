@@ -58,10 +58,12 @@ public class LoginTest {
 		
 		Assert.assertEquals(driver.getTitle(), "OrangeHRM");
 	}
+	
 	@Test 
-	 public void test5 () {
+	public void test6() {
 		System.out.println();
 	}
+	
 	@AfterTest
 	public void tearDown() {
 		driver.close();
